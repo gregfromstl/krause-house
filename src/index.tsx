@@ -1,2 +1,1 @@
-export { ExampleComponent } from './example/example.component'
-export { DefaultButton } from './buttons'
+export { ConnectWalletButton } from './buttons'

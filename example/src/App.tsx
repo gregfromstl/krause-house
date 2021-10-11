@@ -1,10 +1,21 @@
 import React from 'react'
 
-import { DefaultButton } from 'krause-house'
+import { ConnectWalletButton } from 'krause-house'
 import 'krause-house/dist/index.css'
 
 const App = () => {
-  return <DefaultButton text='React Library Example 😄' />
+  const [address, setAddress] = React.useState('')
+  const [status, setStatus] = React.useState('')
+  return (
+    <div>
+      <ConnectWalletButton
+        address={address}
+        setWalletAddress={setAddress}
+        setWalletStatus={setStatus}
+      ></ConnectWalletButton>
+      {status}
+    </div>
+  )
 }
 
 export default App
