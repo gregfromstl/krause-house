@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ConnectWalletButton } from 'krause-house'
+import { ConnectWalletButton, GatedSection } from 'krause-house'
 import 'krause-house/dist/index.css'
 
 const App = () => {
@@ -14,6 +14,7 @@ const App = () => {
         setWalletStatus={setStatus}
       ></ConnectWalletButton>
       {status}
+      <GatedSection hasAccess={false}>Content</GatedSection>
     </div>
   )
 }

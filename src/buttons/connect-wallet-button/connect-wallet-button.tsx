@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { useEffect } from 'react'
-import { DefaultButton } from '..'
+import { DefaultButton } from '../default-button/default-button'
 import { useConnectWallet, useCurrentWalletConnected } from '../../hooks'
 import styles from './connect-wallet-button.styles.scss'
 declare let window: any
