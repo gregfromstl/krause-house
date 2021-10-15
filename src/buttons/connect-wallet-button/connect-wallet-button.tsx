@@ -1,8 +1,7 @@
 import * as React from 'react'
 import { useEffect } from 'react'
-import { DefaultButton } from '../default-button/default-button'
+import { GlowingButton } from '../glowing-button/glowing-button'
 import { useConnectWallet, useCurrentWalletConnected } from '../../hooks'
-import styles from './connect-wallet-button.styles.scss'
 declare let window: any
 
 interface Props {
@@ -47,13 +46,10 @@ export const ConnectWalletButton = ({
   }
 
   return (
-    <DefaultButton
-      style={styles.connectWalletButton}
-      onClick={connectWalletPressed}
-    >
+    <GlowingButton isActive={address === ''} onClick={connectWalletPressed}>
       {address
-        ? address.slice(0, 4) + '...' + address.slice(-4)
+        ? '0x' + (address.slice(2, 4) + '...' + address.slice(-4)).toUpperCase()
         : 'Connect Wallet'}
-    </DefaultButton>
+    </GlowingButton>
   )
 }

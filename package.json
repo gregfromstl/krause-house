@@ -69,6 +69,7 @@
   ],
   "dependencies": {
     "@alch/alchemy-web3": "^1.1.4",
+    "framer-motion": "^4.1.17",
     "node-sass": "^6.0.1"
   }
 }
