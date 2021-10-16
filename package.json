@@ -67,6 +67,7 @@
   ],
   "dependencies": {
     "@alch/alchemy-web3": "^1.1.4",
+    "@emotion/is-prop-valid": "^1.1.0",
     "framer-motion": "^4.1.17",
     "microbundle-crl-with-assets": "^0.13.12",
     "node-sass": "^6.0.1"

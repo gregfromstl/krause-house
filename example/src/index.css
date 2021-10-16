@@ -18,10 +18,11 @@ code {
   width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background: linear-gradient(180deg, #0f1318 0%, #2f2d8b 100%);
   color: white;
   font-size: 16px;
   font-weight: medium;
   flex-direction: column;
+  gap: 100px;
 }

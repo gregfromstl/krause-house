@@ -1,13 +1,12 @@
 import { motion } from 'framer-motion'
 import * as React from 'react'
 import { DefaultButton } from '../default-button/default-button'
-// import styles from './glowing-button.styles.scss'
 
 const variants = {
   active: {
     boxShadow: '0px 0px 50px #FF4EE3',
     outline: '2px solid #FF4EE3',
-    color: '#FF4EE3',
+    color: '#FFFFFF7A',
     transition: { duration: 1 }
   },
   inactive: {
