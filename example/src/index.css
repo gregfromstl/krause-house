@@ -20,4 +20,7 @@ code {
   align-items: center;
   justify-content: center;
   background: linear-gradient(180deg, #0f1318 0%, #2f2d8b 100%);
+  color: white;
+  font-size: 16px;
+  font-weight: medium;
 }
