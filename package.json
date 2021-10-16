@@ -12,8 +12,8 @@
     "node": ">=12.22.0"
   },
   "scripts": {
-    "build": "microbundle-crl --no-compress --format modern,cjs",
-    "start": "microbundle-crl watch --no-compress --format modern,cjs",
+    "build": "microbundle-crl --no-compress --format modern,cjs --external .*/images/*",
+    "start": "microbundle-crl watch --no-compress --format modern,cjs --external .*/images/*",
     "prepare": "run-s build",
     "test": "run-s test:unit test:lint test:build",
     "test:build": "run-s build",
@@ -21,9 +21,7 @@
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
     "react": "^16.0.0"
@@ -70,6 +68,7 @@
   "dependencies": {
     "@alch/alchemy-web3": "^1.1.4",
     "framer-motion": "^4.1.17",
+    "microbundle-crl-with-assets": "^0.13.12",
     "node-sass": "^6.0.1"
   }
 }

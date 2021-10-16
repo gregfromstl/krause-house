@@ -1,4 +1,9 @@
 @font-face {
   font-family: 'Mont';
-  src: local('Mont'), url(./fonts/Mont-HeavyDEMO.otf) format('opentype');
+  src: local('Mont'), url(./assets/fonts/Mont-HeavyDEMO.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Brat';
+  src: local('Brat'), url(./assets/fonts/Brat.ttf) format('ttf');
 }

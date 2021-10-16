@@ -11185,6 +11185,54 @@ methods@~1.1.2:
   resolved "https://registry.yarnpkg.com/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
   integrity sha1-VSmk1nZUE07cxSZmVoNbD4Ua/O4=
 
+microbundle-crl-with-assets@^0.13.12:
+  version "0.13.12"
+  resolved "https://registry.yarnpkg.com/microbundle-crl-with-assets/-/microbundle-crl-with-assets-0.13.12.tgz#080242919166e5c286da66e0422ab1163141c36a"
+  integrity sha512-LJuSGuIDFRgBN3SzrtyXhWr5FiB6Z9qXCGSkAEO00DWIKNNKkbjJSFCQ56ywrKTseWWi7llJLPh2J0Xq3gA8ug==
+  dependencies:
+    "@babel/core" "^7.8.7"
+    "@babel/plugin-proposal-class-properties" "7.7.4"
+    "@babel/plugin-proposal-decorators" "^7.8.3"
+    "@babel/plugin-proposal-optional-chaining" "^7.8.3"
+    "@babel/plugin-syntax-jsx" "^7.7.4"
+    "@babel/plugin-transform-flow-strip-types" "^7.7.4"
+    "@babel/plugin-transform-react-jsx" "^7.7.7"
+    "@babel/preset-env" "^7.8.7"
+    "@babel/preset-flow" "^7.7.4"
+    "@rollup/plugin-alias" "^3.0.1"
+    "@rollup/plugin-commonjs" "^11.0.2"
+    "@rollup/plugin-json" "^4.0.2"
+    "@rollup/plugin-node-resolve" "^6.1.0"
+    "@svgr/rollup" "^5.4.0"
+    asyncro "^3.0.0"
+    autoprefixer "^9.7.3"
+    babel-plugin-macros "^2.8.0"
+    babel-plugin-transform-async-to-promises "^0.8.15"
+    babel-plugin-transform-replace-expressions "^0.2.0"
+    brotli-size "^4.0.0"
+    camelcase "^5.3.1"
+    cssnano "^4.1.10"
+    es6-promisify "^6.0.1"
+    filesize "^6.1.0"
+    gzip-size "^5.1.1"
+    kleur "^3.0.3"
+    lodash.merge "^4.6.2"
+    module-details-from-path "^1.0.3"
+    postcss-copy "^7.1.0"
+    pretty-bytes "^5.3.0"
+    rollup "^1.32.1"
+    rollup-plugin-babel "^4.4.0"
+    rollup-plugin-bundle-size "^1.0.1"
+    rollup-plugin-es3 "^1.1.0"
+    rollup-plugin-postcss "^2.4.1"
+    rollup-plugin-smart-asset "^2.0.7"
+    rollup-plugin-terser "^5.3.0"
+    rollup-plugin-typescript2 "^0.25.3"
+    sade "^1.7.3"
+    tiny-glob "^0.2.6"
+    tslib "^1.11.1"
+    typescript "^3.8.3"
+
 microbundle-crl@^0.13.10:
   version "0.13.11"
   resolved "https://registry.yarnpkg.com/microbundle-crl/-/microbundle-crl-0.13.11.tgz#8a3a3613685502c2a52dfde10e0390386eab4bff"
@@ -11237,7 +11285,7 @@ microevent.ts@~0.1.1:
   resolved "https://registry.yarnpkg.com/microevent.ts/-/microevent.ts-0.1.1.tgz#70b09b83f43df5172d0205a63025bce0f7357fa0"
   integrity sha512-jo1OfR4TaEwd5HOrt5+tAZ9mqT4jmpNAusXtyfNzqVm9uiSYFZlKM1wYL4oU7azZW/PxQW53wM0S6OR1JHNa2g==
 
-micromatch@^3.1.10, micromatch@^3.1.4:
+micromatch@^3.0.3, micromatch@^3.1.10, micromatch@^3.1.4:
   version "3.1.10"
   resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-3.1.10.tgz#70859bc95c9840952f359a068a3fc49f9ecfac23"
   integrity sha512-MWikgl9n9M3w+bpsY3He8L+w9eF9338xRl8IAO5viDizwSzziFEyUzo2xrrloB64ADbTf8uA8vRqqttDTOmccg==
@@ -12693,6 +12741,17 @@ postcss-convert-values@^4.0.1:
     postcss "^7.0.0"
     postcss-value-parser "^3.0.0"
 
+postcss-copy@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/postcss-copy/-/postcss-copy-7.1.0.tgz#1fee64421c5394451c0a094ecdc96a337779ff57"
+  integrity sha512-O3oGdW1pzEo2hvnKCFk1j4SYlfoeYELVFxJBP5ib/iAPqujJTumDRcxOtMucmpZNWfn5zqh8Hr4kiZUHtoEtUg==
+  dependencies:
+    micromatch "^3.0.3"
+    mkdirp "^0.5.1"
+    pify "^3.0.0"
+    postcss "^6.0.3"
+    postcss-value-parser "^3.3.0"
+
 postcss-custom-media@^7.0.8:
   version "7.0.8"
   resolved "https://registry.yarnpkg.com/postcss-custom-media/-/postcss-custom-media-7.0.8.tgz#fffd13ffeffad73621be5f387076a28b00294e0c"
@@ -13289,7 +13348,7 @@ postcss-unique-selectors@^4.0.1:
     postcss "^7.0.0"
     uniqs "^2.0.0"
 
-postcss-value-parser@^3.0.0:
+postcss-value-parser@^3.0.0, postcss-value-parser@^3.3.0:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-3.3.1.tgz#9ff822547e2893213cf1c30efa51ac5fd1ba8281"
   integrity sha512-pISE66AbVkp4fDQ7VHBwRNXzAAKJjw4Vw7nWI/+Q3vuly7SNfgYXvm6i5IgFylHGK5sP/xHAbB7N49OS4gWNyQ==
@@ -13326,7 +13385,7 @@ postcss@7.0.21:
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
-postcss@^6.0.1:
+postcss@^6.0.1, postcss@^6.0.3:
   version "6.0.23"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.23.tgz#61c82cc328ac60e677645f979054eb98bc0e3324"
   integrity sha512-soOk1h6J3VMTZtVeVpv15/Hpdl2cBLX3CAw4TAbkpTJiNPk9YP/zWcD1ND+xEtvyuuvKzbxliTOIyvkSeSJ6ag==
